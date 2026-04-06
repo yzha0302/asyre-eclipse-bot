@@ -24,6 +24,8 @@
 
 <br>
 
+**[中文文档 (Chinese)](README_CN.md)**
+
 [**Why This Exists**](#why-this-exists) · [**How It Works**](#how-it-actually-works) · [**Templates**](#the-6-templates) · [**Quick Start**](#quick-start) · [**Configuration**](#configuration-reference)
 
 </div>
@@ -79,7 +81,7 @@ A Skill Panel is a permanent message (embed + buttons) in a Discord channel. Eac
 
 <div align="center">
 <img src="docs/assets/panel-overview.png" width="500" alt="Skill Panel with buttons">
-<br><em>A Skill Panel: embed with description + 4 action buttons (Open, Archive, History, Clean)</em>
+<br><em>A Skill Panel in production. The panel reads: "Cognitive Archive System — Record conversations, discuss content, extract insights." Buttons from left: Start, Archive, History, Clean.</em>
 </div>
 
 
@@ -115,7 +117,7 @@ The AI knows exactly what to do before the user even speaks. No guessing. No hal
 
 <div align="center">
 <img src="docs/assets/type-selector.png" width="400" alt="Type selector dropdown">
-<br><em>User selects task type from dropdown — each type injects different skill context</em>
+<br><em>Type selector dropdown after clicking "Start." Options: Client Conversation (customer communication records), Content Discussion (cognitive analysis, co-creation), Cognitive Upgrade (new frameworks, new insights), Free Notes (unclassified ideas and inspiration).</em>
 </div>
 
 
@@ -144,7 +146,7 @@ Every task traceable. Every AI interaction scoped. Archive ensures nothing lost.
 
 <div align="center">
 <img src="docs/assets/thread-context-injection.png" width="600" alt="Thread with injected context">
-<br><em>Fresh thread created: team members added, skill context injected, AI ready to execute</em>
+<br><em>Thread created for "Cognitive Upgrade" task. Top: Eclipse Bot mentions team members and posts a welcome embed with date, participants, and instructions. Bottom: AI bot receives injected context — skill name (<code>cognitive-archive</code>), type (Cognitive Upgrade), description, and instruction to read the skill docs and wait for user input.</em>
 </div>
 
 
@@ -169,7 +171,7 @@ With this: clear beginning and end, forced final deliverable, clean workspace, f
 
 <div align="center">
 <img src="docs/assets/archive-result.png" width="600" alt="Archive result">
-<br><em>Archive complete: AI produces structured summary — 9 topics, 8 decisions, 6 action items, 6 deliverables</em>
+<br><em>Archive in action. Top: Eclipse Bot sends archive command — "Read all thread messages, generate structured summary (topics, decisions, action items), save to server." Bottom: AI bot responds with completion — summary saved to <code>hq/daily-sync/2026-03-15.md</code>, containing 9 topics, 8 decisions, 6 action items, 6 deliverables, with key decisions listed (e.g., "GOG CLI defaults to Google tools", "AI email marketing direction", "SEO strategy 8000-word full document").</em>
 </div>
 
 
@@ -206,7 +208,7 @@ With this: clear beginning and end, forced final deliverable, clean workspace, f
 <div align="center">
 <img src="docs/assets/panel-content-card.png" width="500" alt="Content Card panel">
 <img src="docs/assets/type-selector-card.png" width="400" alt="Card type selector">
-<br><em>Content Card panel and its type selector — 6 visual output formats</em>
+<br><em>Left: Content Card panel — "Convert content to PNG visual cards. 6 molds: long-form / infographic / multi-card / visual notes / comics / whiteboard. HTML template + Playwright screenshot, stable and controllable." Right: Type selector showing Long Image (single reading card), Infographic (data-driven adaptive layout), Multi-Card (auto-split into 1080x1440 cards), Visual Notes (hand-drawn sketchnote style), Comics (Japanese B&W manga style).</em>
 </div>
 
 
