@@ -79,10 +79,6 @@ This is not a theoretical improvement. We have run this system in production acr
 
 A Skill Panel is a permanent message (embed + buttons) in a Discord channel. Each channel is dedicated to one type of work.
 
-<div align="center">
-<img src="docs/assets/panel-overview.png" width="500" alt="Skill Panel with buttons">
-<br><em>A Skill Panel in production. The panel reads: "Cognitive Archive System — Record conversations, discuss content, extract insights." Buttons from left: Start, Archive, History, Clean.</em>
-</div>
 
 
 ```
@@ -97,6 +93,11 @@ Channel: #deep-writing
 |  [✍️ Open] [📦 Archive] [📜 History] [🗑️ Clean] |
 +------------------------------------------+
 ```
+
+<div align="center">
+<img src="docs/assets/panel-skill-forge.png" width="450" alt="Skill Forge Panel">
+<br><em>Skill Forge panel. Title: "Skill Workshop — Create, improve, and audit Agent skills." Three workflows: create new skill, view skill list, view history. Buttons: Start, Archive, History, Clean.</em>
+</div>
 
 **Open** — User clicks, selects task type. Eclipse Bot:
 1. Creates a thread with unique ID (e.g., `ASYR-042`)
@@ -115,10 +116,6 @@ Read the skill docs and prepare for Opinion Piece work.
 
 The AI knows exactly what to do before the user even speaks. No guessing. No hallucinations from mixed context.
 
-<div align="center">
-<img src="docs/assets/type-selector.png" width="400" alt="Type selector dropdown">
-<br><em>Type selector dropdown after clicking "Start." Options: Client Conversation (customer communication records), Content Discussion (cognitive analysis, co-creation), Cognitive Upgrade (new frameworks, new insights), Free Notes (unclassified ideas and inspiration).</em>
-</div>
 
 
 **Archive** — AI processes the thread output (summarizes, saves files, publishes). Thread marked complete.
@@ -143,6 +140,12 @@ You get:
 ```
 
 Every task traceable. Every AI interaction scoped. Archive ensures nothing lost.
+
+<div align="center">
+<img src="docs/assets/panel-showcase-with-threads.png" width="600" alt="Showcase panel with threads">
+<br><em>Showcase Page Generator in action. Panel: "One-click industry showcase materials." Below: thread QIHE-062 created for "Pain Point Research." Type selector: Pain Point Research (depth analysis + AI solutions), Industry Foresight (macro + landscape + AI), E-commerce/Cross-border, Manufacturing/Factory, F&B/Retail.</em>
+</div>
+
 
 <div align="center">
 <img src="docs/assets/thread-context-injection.png" width="600" alt="Thread with injected context">
@@ -170,6 +173,12 @@ Without this: threads pile up, no clear status, stale AI context, cluttered work
 With this: clear beginning and end, forced final deliverable, clean workspace, full auditability.
 
 <div align="center">
+<img src="docs/assets/panel-social-data-with-threads.png" width="600" alt="Social data panel">
+<br><em>RuiCha social media data panel — real-time data from 21 platforms (Douyin, Xiaohongshu, Bilibili, TikTok, YouTube, Instagram, Twitter). Types: Video/Post Details, Account Analysis, Trending/Hot Topics, Content Search, Video Transcript. Thread QIHE-060 created for "Account Analysis" with 23 messages.</em>
+</div>
+
+
+<div align="center">
 <img src="docs/assets/archive-result.png" width="600" alt="Archive result">
 <br><em>Archive in action. Top: Eclipse Bot sends archive command — "Read all thread messages, generate structured summary (topics, decisions, action items), save to server." Bottom: AI bot responds with completion — summary saved to <code>hq/daily-sync/2026-03-15.md</code>, containing 9 topics, 8 decisions, 6 action items, 6 deliverables, with key decisions listed (e.g., "GOG CLI defaults to Google tools", "AI email marketing direction", "SEO strategy 8000-word full document").</em>
 </div>
@@ -192,6 +201,12 @@ With this: clear beginning and end, forced final deliverable, clean workspace, f
 
 **Best for**: Writers, KOLs, content teams, anyone producing written content regularly.
 
+<div align="center">
+<img src="docs/assets/panel-cognitive-archive-full.png" width="600" alt="Cognitive Archive full view">
+<br><em>Cognitive Archive in production — panel + active threads (QIHE-063 "Joy" with 216 messages) + type selector (Client Conversation, Content Discussion, Cognitive Upgrade, Free Notes). AI confirms completion with output file link.</em>
+</div>
+
+
 ### 2. Service Agency — 6 panels
 
 | Panel | Types | What It Does |
@@ -205,11 +220,6 @@ With this: clear beginning and end, forced final deliverable, clean workspace, f
 
 **Best for**: Design firms, consulting companies, outsourcing teams.
 
-<div align="center">
-<img src="docs/assets/panel-content-card.png" width="500" alt="Content Card panel">
-<img src="docs/assets/type-selector-card.png" width="400" alt="Card type selector">
-<br><em>Left: Content Card panel — "Convert content to PNG visual cards. 6 molds: long-form / infographic / multi-card / visual notes / comics / whiteboard. HTML template + Playwright screenshot, stable and controllable." Right: Type selector showing Long Image (single reading card), Infographic (data-driven adaptive layout), Multi-Card (auto-split into 1080x1440 cards), Visual Notes (hand-drawn sketchnote style), Comics (Japanese B&W manga style).</em>
-</div>
 
 
 ### 3. Creative Studio — 7 panels
